@@ -1,6 +1,5 @@
-import { useState } from "react";
+import { useState, useCallback } from "react";
 import weddingCouple from "@/assets/wedding-couple.jpg";
-import bellImg from "@/assets/bell.png";
 import Bell from "./bell";
 
 interface HeroSectionProps {
@@ -10,31 +9,38 @@ interface HeroSectionProps {
 const HeroSection = ({ onEnter }: HeroSectionProps) => {
   const [ringing, setRinging] = useState(false);
 
-  const handleBellClick = () => {
+  const handleBellClick = useCallback(() => {
+    if (ringing) return;
+
     setRinging(true);
+
+    try {
+      const audio = new Audio(`${import.meta.env.BASE_URL}Flute.mp3`);
+      audio.volume = 0.3; // soft music
+      audio.loop = true;
+      audio.play().catch(() => {});
+    } catch {}
+
     setTimeout(() => {
       onEnter();
-    }, 800);
-  };
-
-  
+    }, 1500);
+  }, [ringing, onEnter]);
 
   return (
     <div
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
       onClick={(e) => {
-        // Prevent click from bell button bubbling up
-        if ((e.target as HTMLElement).closest('button')) return;
+        if ((e.target as HTMLElement).closest("button")) return;
         onEnter();
       }}
-      style={{ cursor: 'pointer' }}
+      style={{ cursor: "pointer" }}
     >
       <img
         src={weddingCouple}
         alt="Wedding couple illustration"
         className="absolute inset-0 w-full h-full object-cover"
-        width={1920}
-        height={1280}
+        // width={1920}
+        // height={1280}
       />
       <div className="absolute inset-0 bg-background/40" />
 
