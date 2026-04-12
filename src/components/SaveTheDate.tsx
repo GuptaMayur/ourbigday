@@ -30,7 +30,7 @@ const SaveTheDate = () => {
             कथा मटकोर एवं शुभ हल्दी
           </p>
           <p className="font-body text-muted-foreground text-lg">
-            10/05/2026, रविवार (<a href="https://maps.app.goo.gl/QCf1osSb8bzggQ1t8" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">निज निवास</a>)
+            10/05/2026, रविवार (<a href="https://maps.app.goo.gl/QCf1osSb8bzggQ1t8" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">📍निज निवास</a>)
           </p>
           <a
             href={calendarUrl("कथा मटकोर एवं शुभ हल्दी", "2026-05-10", "निज निवास")}
@@ -43,11 +43,11 @@ const SaveTheDate = () => {
         </div>
 
         <div className="glass-card rounded-xl p-8 md:p-12 mb-4">
-          <p className="font-heading text-foreground text-lg tracking-wider mb-4">
+          <p className="font-heading text-forमलाही बाज़ार (eground text-lg tracking-wider mb-4">
             मेहँदी
           </p>
           <p className="font-body text-muted-foreground text-lg">
-            11/05/2026, सोमवार (<a href="https://maps.app.goo.gl/QCf1osSb8bzggQ1t8" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">निज निवास</a>)
+            11/05/2026, सोमवार (<a href="https://maps.app.goo.gl/QCf1osSb8bzggQ1t8" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">📍निज निवास</a>)
           </p>
           <a
             href={calendarUrl("मेहँदी", "2026-05-11", "निज निवास")}
@@ -86,7 +86,7 @@ const SaveTheDate = () => {
             विदाई
           </p>
           <p className="font-body text-muted-foreground text-lg">
-            13/05/2026, बुधवार (<a href="https://maps.app.goo.gl/QCf1osSb8bzggQ1t8" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">निज निवास</a>)
+            13/05/2026, बुधवार (<a href="https://maps.app.goo.gl/QCf1osSb8bzggQ1t8" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">📍निज निवास</a>)
           </p>
         </div>
       </div>

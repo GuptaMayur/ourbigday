@@ -21,7 +21,7 @@ const Footer = () => {
         <p className="font-heading text-foreground text-sm tracking-wider mb-2">॥ प्रेषक ॥</p>
         <p className="font-body text-muted-foreground">श्री अमर प्रसाद</p>
         <p className="font-body text-muted-foreground text-sm">
-          ग्राम - मलाही बाज़ार (वाया - अरेराज), जिला - पूर्वी चम्पारण (बिहार) – 845425
+         <a href="https://maps.app.goo.gl/QCf1osSb8bzggQ1t8" target="_blank" rel="noopener noreferrer" className="underline hover:text-foreground">ग्राम - मलाही बाज़ार (वाया - अरेराज), जिला - पूर्वी चम्पारण (बिहार-845425)</a>
         </p>
       </div>
 
