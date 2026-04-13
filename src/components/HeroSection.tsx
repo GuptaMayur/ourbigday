@@ -1,5 +1,6 @@
 import { useState, useCallback, useRef } from "react";
 import weddingCouple from "@/assets/wedding-couple.jpg";
+import WeddingCountdown from "./WeddingCountdown";
 import Bell from "./bell";
 
 interface HeroSectionProps {
@@ -61,7 +62,7 @@ const HeroSection = ({ onEnter }: HeroSectionProps) => {
 
       <div className="relative z-10 text-center px-4">
         <p className="font-heading text-foreground tracking-[0.3em] text-sm md:text-base uppercase mb-6">
-          एक नई शुरुआत का जश्न
+          एक नई शुरुआत का उत्सव
         </p>
 
         <h1 className="font-display text-5xl md:text-6xl text-foreground leading-tight">
@@ -85,8 +86,9 @@ const HeroSection = ({ onEnter }: HeroSectionProps) => {
         </button>
 
         <p className="font-heading text-foreground tracking-[0.25em] text-xs md:text-sm uppercase mt-4">
-          शुभ प्रवेश हेतु घंटी बजाएं
+          शुभ प्रवेश हेतु घंटी स्पर्श करें
         </p>
+        <WeddingCountdown />
       </div>
     </div>
   );
